@@ -1,0 +1,21 @@
+#labels Phase-Requirements
+*jsUML2 - A lightweight HTML5/javascript library for UML 2 diagramming*
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+= Requirements =
+
+The use of this library is limited to 
+
+= License =
+[http://opensource.org/licenses/gpl-3.0.html]
