@@ -9,8 +9,8 @@ This project is *under development*. However, a few functionalities are already 
 
 http://www.jrromero.net/tools
 
-|| *Date* | *Version* | *Description* ||
-|| Feb 27, 2011 | 0.5 | Inicial version ||
+|| *Date* || *Version*  || *Description* ||
+|| Feb 27, 2011 || 0.5 || Inicial version ||
 
 
 == Team ==
