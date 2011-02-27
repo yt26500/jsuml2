@@ -1,4 +1,3 @@
-#labels Phase-Requirements
 = Introduction =
 
 *jsUML2* - A lightweight HTML5/javascript library for UML 2 diagramming. It allows the developer to easily embed UML 2 diagram in web applications, just invoking a few javascript methods.
@@ -22,14 +21,13 @@ http://www.jrromero.net/tools
 
 == Improvements in progress ==
 
+We are currently working on the following improvements:
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+ * New diagrams: 
+   * state machine
+   * activity diagram
+ * Profiling capabilities, i.e., customize your diagrams using a profile definition
+ * More accurate Export/Import capabilities
 
 = Requirements =
 
