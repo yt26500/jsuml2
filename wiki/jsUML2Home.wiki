@@ -9,12 +9,20 @@ This project is *under development*. However, a few functionalities are already 
 
 http://www.jrromero.net/tools
 
+|| *Date* | *Version* | *Description* ||
+|| Feb 27, 2011 | 0.5 | Inicial version ||
+
+
 == Team ==
  * Project leader & ideologist: 
    * José Raúl Romero, PhD (University of Córdoba, Spain)
 
  * Developer(s): 
    * Martin Vega-Leal, BSc
+
+== Improvements in progress ==
+
+
 
 = Details =
 
