@@ -8,16 +8,16 @@ This project is *under development*. However, a few functionalities are already 
 
 http://www.jrromero.net/tools
 
-|| *Date* || *Version*  || *Description* ||
-|| Feb 27, 2011 || 0.5 || Initial version ||
+|| *Date* || *Version*  || *Description* || *Authors* ||
+|| Feb 27, 2011 || 0.5 || Initial version || JRR, MVL ||
 
 
 == Team ==
  * _Project leader & ideologist_: 
-   * José Raúl Romero, PhD (University of Córdoba, Spain)
+   * José Raúl Romero, PhD (University of Córdoba, Spain) [JRR]
 
  * _Developer(s)_: 
-   * Martin Vega-Leal, BSc
+   * Martin Vega-Leal, BSc [MVL]
 
 == Improvements in progress ==
 
