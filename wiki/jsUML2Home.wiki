@@ -1,9 +1,8 @@
 #labels Phase-Requirements
 
-
 = Introduction =
 
-*jsUML2* - A lightweight HTML5/javascript library for UML 2 diagramming. It allows the developer to easily embed UML 2 diagram in his web applications, just invoking a few javascript methods.
+*jsUML2* - A lightweight HTML5/javascript library for UML 2 diagramming. It allows the developer to easily embed UML 2 diagram in web applications, just invoking a few javascript methods.
 
 == Team ==
  * Leader and supervisor: 
