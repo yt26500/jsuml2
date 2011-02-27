@@ -14,10 +14,10 @@ http://www.jrromero.net/tools
 
 
 == Team ==
- * Project leader & ideologist: 
+ * __Project leader & ideologist__: 
    * José Raúl Romero, PhD (University of Córdoba, Spain)
 
- * Developer(s): 
+ * __Developer(s)__: 
    * Martin Vega-Leal, BSc
 
 == Improvements in progress ==
