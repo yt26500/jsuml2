@@ -9,7 +9,7 @@ This project is *under development*. However, a few functionalities are already 
 http://www.jrromero.net/tools
 
 || *Date* || *Version*  || *Description* ||
-|| Feb 27, 2011 || 0.5 || Inicial version ||
+|| Feb 27, 2011 || 0.5 || Initial version ||
 
 
 == Team ==
@@ -21,7 +21,7 @@ http://www.jrromero.net/tools
 
 == Improvements in progress ==
 
-We are currently working on the following improvements:
+We are currently working on the following improvements and add-ons:
 
  * New diagrams: 
    * state machine
