@@ -13,7 +13,7 @@ http://www.jrromero.net/tools
 
 
 == Team ==
- * _Project leader & ideologist_: 
+ * _Supervisor & ideologist_: 
    * [http://www.jrromero.net José Raúl Romero], PhD (University of Córdoba, Spain) {*JRR*}
 
  * _Developer(s)_: 
