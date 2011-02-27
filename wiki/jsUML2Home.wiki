@@ -32,4 +32,4 @@ The use of this library is limited to
 This project is licensed under GNU GPL v3:
 [http://opensource.org/licenses/gpl-3.0.html]
 
-Enjoy the library! Notice that we freely but gladly share our effort with you, so please send us any modification or addition to the library code. Moreover, report any tool or website made using this library. This will cost you only a very short time, but would help us to improve our library in the future. Thank you!
+Enjoy the library! Notice that we freely but gladly share our effort with you, so please send us any modification or addition to the library code. We also appreciate if you report any tool or website that you made using this library. This will cost you only a very short time, but would help us to improve our library in the future. Thank you!
