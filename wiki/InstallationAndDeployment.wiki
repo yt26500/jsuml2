@@ -1,0 +1,33 @@
+= Installing the library =
+Para comprender correctamente el proceso de instalación de la librería hay que saber un elemento básico de su arquitectura, y es que la librería esta compuesta de dos partes:
+
+  * UDCore: Es el núcleo de la librería, por ello concentra la mayor parte de la funcionalidad y complejidad. Su función comprende desde el dibujo de líneas y formas, hasta el manejo y la interacción con el usuario.
+  * UDModules: Se trata de una capa superior a la anterior. Esta capa contiene los objetos de UML 2, implementados sobre los elementos proporcionados por la capa UDCore, dotando a estos de la forma requerida por el estándar.
+
+= Deployment =
+
+La librería se compone de multitud de ficheros de clases, hojas de estilo e imágenes, sin embargo, para su uso dentro de una aplicación web es requisito indispensable reducir al mínimo el número de ficheros, para mejorar la transferencia de la librería a través de la red, por tanto, la librería se ha empaquetado y comprimido en solo dos ficheros Javascript, una hoja de estilo común y un directorio de imágenes. 
+
+Los ficheros finales de la librería, listos para su uso en una aplicación, se encuentran en el directorio 'build', detallamos su estructura a continuación.
+
+    /build
+        /css - Hojas de estilo utilizada por la librería.
+        /img - Imágenes necesarias para el uso de la librería
+        /temp - Ficheros Javascript de la librería, sin comprimir.
+        UDCore.js - Fichero empaquetado y comprimido del núcleo de la librería.
+        UDModules.js - Fichero empaquetado y comprimido con los diagramas finales de UML 2.
+
+Para el correcto funcionamiento de la librería, habrá que incluir los directorios 'css', 'img', así como los ficheros 'UDCore.js' y 'UDModules.js'. El directorio 'temp', contiene los ficheros de la librería sin comprimir, por si se necesita depurar la aplicación, pero no es necesario utilizarlos.
+
+A continuación, será necesario añadir las etiquetas que enlacen con los ficheros fuente de Javascript y la hoja de estilos, dentro de la cabecera del documento HTML, entre la etiqueta <head></head>.
+
+{{{
+    <link type="text/css" rel="stylesheet" 
+          href="css/UDStyle.css" media="screen" />
+    <script type="text/javascript" src="UDCore.js"></script>
+    <script type="text/javascript" src="UDModules.js"></script>
+}}}
+
+La ruta de los ficheros deberá coincidir con el directorio raíz de la aplicación, sin embargo, es importante que el enlace al fichero 'UDCore.js', se produzca antes que ningún otro relacionado con la librería, ya que es el encargado de proporcionar las funciones básicas y debe ser ejecutado en primer lugar. A continuación, se incluirá 'UDModules.js' que proporciona los objetos finales para los diagramas de UML 2.
+
+A partir de este momento se puede añadir cualquier fichero Javascript que haga uso de la librería, ya que todo habrá sido cargado en el orden correcto y no debería haber problemas de dependencias. 
