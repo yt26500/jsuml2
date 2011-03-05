@@ -10,7 +10,7 @@ En este apartado se explicará el proceso de empaquetado y compresión de los fi
 Para llevar a cabo esta tarea serán necesarias las siguientes aplicaciones: 
 
   * [http://getsprockets.org/installation_and_usage Sprockets]
-  * YUICompressor
+  * [http://developer.yahoo.com/yui/compressor/ YUICompressor]
   * Empaquetado de la librería 
 
 == NOTA importante ==
