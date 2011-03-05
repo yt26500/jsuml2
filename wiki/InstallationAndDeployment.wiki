@@ -13,16 +13,16 @@ Los ficheros finales de la librería, listos para su uso en una aplicación, se 
 
 {{{
     /build
-        /css      % Hojas de estilo utilizada por la librería.
-        /img      % Imágenes necesarias para el uso de la librería
-        /temp     % Ficheros Javascript de la librería, sin comprimir.
-        UDCore.js % Fichero empaquetado y comprimido del núcleo de la librería.
+        /css         % Hojas de estilo utilizada por la librería.
+        /img         % Imágenes necesarias para el uso de la librería
+        /temp        % Ficheros Javascript de la librería, sin comprimir.
+        UDCore.js    % Fichero empaquetado y comprimido del núcleo de la librería.
         UDModules.js % Fichero empaquetado y comprimido con los diagramas finales de UML 2.
 }}}
 
 Para el correcto funcionamiento de la librería, habrá que incluir los directorios 'css', 'img', así como los ficheros 'UDCore.js' y 'UDModules.js'. El directorio 'temp', contiene los ficheros de la librería sin comprimir, por si se necesita depurar la aplicación, pero no es necesario utilizarlos.
 
-A continuación, será necesario añadir las etiquetas que enlacen con los ficheros fuente de Javascript y la hoja de estilos, dentro de la cabecera del documento HTML, entre la etiqueta <head></head>.
+A continuación, será necesario añadir las etiquetas que enlacen con los ficheros fuente de Javascript y la hoja de estilos, dentro de la cabecera del documento HTML, entre las etiquetas {{{<head></head>}}}.
 
 {{{
     <link type="text/css" rel="stylesheet" 
