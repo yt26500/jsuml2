@@ -1,0 +1,14 @@
+= Extending the library =
+
+Si es necesario realizar algún cambio o está interesado en ampliar su funcionalidad con nuevos diagramas, requerirá el uso de herramientas especiales y un conocimiento más amplio. 
+
+En este apartado se explicará el proceso de empaquetado y compresión de los ficheros de código de la librería, solo debería leerlo si usted se encuentra en alguno de los siguientes supuestos:
+
+  * Quiere añadir o eliminar algún diagrama de la librería.
+  * Ha modificado el código de la librería y necesita volver a empaquetarla.
+
+Para llevar a cabo esta tarea serán necesarias las siguientes aplicaciones: 
+
+  * [http://getsprockets.org/installation_and_usage Sprockets]
+  * YUICompressor
+  * Empaquetado y compresión 
