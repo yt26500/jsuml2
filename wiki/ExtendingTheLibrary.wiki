@@ -43,12 +43,12 @@ Una vez se tienen instaladas las aplicaciones necesarias es importante tener una
 
 {{{
     /src
-        /core - Ficheros del núcleo de la librería.
-        /modules - Fichero con los diagramas de UML 2.
-            /class - Diagramas de clases.
-            /component - Diagramas de componentes.
-            /sequence - Diagramas de secuencia.
-            /usecase - Diagramas de casos de uso.
+        /core           % Ficheros del núcleo de la librería.
+        /modules        % Fichero con los diagramas de UML 2.
+            /class      % Diagramas de clases.
+            /component  % Diagramas de componentes.
+            /sequence   % Diagramas de secuencia.
+            /usecase    % Diagramas de casos de uso.
 }}}
 
 Así se comprende claramente la distribución general de los ficheros, cuando la librería es empaquetada, extrae la información sobre los diagramas del directorio 'modules', por tanto, un desarrollador que desee algunos diagramas concretos dentro de su aplicación, deberá añadir o eliminar los que quiera dentro de ese directorio y empaquetar todo de nuevo.
