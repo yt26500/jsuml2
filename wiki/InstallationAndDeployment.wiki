@@ -1,8 +1,9 @@
 = Installing the library =
 Para comprender correctamente el proceso de instalación de la librería hay que saber un elemento básico de su arquitectura, y es que la librería esta compuesta de dos partes:
 
-  * UDCore: Es el núcleo de la librería, por ello concentra la mayor parte de la funcionalidad y complejidad. Su función comprende desde el dibujo de líneas y formas, hasta el manejo y la interacción con el usuario.
-  * UDModules: Se trata de una capa superior a la anterior. Esta capa contiene los objetos de UML 2, implementados sobre los elementos proporcionados por la capa UDCore, dotando a estos de la forma requerida por el estándar.
+  * 'UDCore': Es el núcleo de la librería, por ello concentra la mayor parte de la funcionalidad y complejidad. Su función comprende desde el dibujo de líneas y formas, hasta el manejo y la interacción con el usuario.
+
+  * 'UDModules': Se trata de una capa superior a la anterior. Esta capa contiene los objetos de UML 2, implementados sobre los elementos proporcionados por la capa 'UDCore', dotando a estos de la forma requerida por el estándar.
 
 = Deployment =
 
@@ -10,12 +11,14 @@ La librería se compone de multitud de ficheros de clases, hojas de estilo e im�
 
 Los ficheros finales de la librería, listos para su uso en una aplicación, se encuentran en el directorio 'build', detallamos su estructura a continuación.
 
+{{{
     /build
-        /css - Hojas de estilo utilizada por la librería.
-        /img - Imágenes necesarias para el uso de la librería
-        /temp - Ficheros Javascript de la librería, sin comprimir.
-        UDCore.js - Fichero empaquetado y comprimido del núcleo de la librería.
-        UDModules.js - Fichero empaquetado y comprimido con los diagramas finales de UML 2.
+        /css      % Hojas de estilo utilizada por la librería.
+        /img      % Imágenes necesarias para el uso de la librería
+        /temp     % Ficheros Javascript de la librería, sin comprimir.
+        UDCore.js % Fichero empaquetado y comprimido del núcleo de la librería.
+        UDModules.js % Fichero empaquetado y comprimido con los diagramas finales de UML 2.
+}}}
 
 Para el correcto funcionamiento de la librería, habrá que incluir los directorios 'css', 'img', así como los ficheros 'UDCore.js' y 'UDModules.js'. El directorio 'temp', contiene los ficheros de la librería sin comprimir, por si se necesita depurar la aplicación, pero no es necesario utilizarlos.
 
