@@ -1,12 +1,15 @@
 = Library architecture =
 
-Es importante destacar la separación que existe en la arquitectura de la librería entre la funcionalidad y el diseño de los elementos finales de UML 2.
+Es importante destacar la separación existente en la arquitectura de la librería entre la funcionalidad y el diseño gráfico de los elementos finales de UML 2.
 
   * 'UDCore': Es el núcleo de la librería, por ello concentra la mayor parte de la funcionalidad y complejidad. Su función comprende desde el dibujo de líneas y formas, hasta el manejo y la interacción con el usuario. 
 
   * 'UDModules': Se trata de una capa superior a la anterior. Esta capa contiene los objetos de UML 2, implementados sobre los elementos proporcionados por la capa 'UDCore', dotando a estos de la forma requerida por el estándar. 
 
-== Object overview ==
+Para descargar la guía de referencia:
+<Enlace a quickreference.pdf>
+
+== Quick overview ==
 
   * UDCore
     * Diagram
