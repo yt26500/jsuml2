@@ -1,17 +1,19 @@
 = Library architecture =
 
-Es importante destacar la separación existente en la arquitectura de la librería entre la funcionalidad y el diseño gráfico de los elementos finales de UML 2.
+This is a layered library architecture. Graphics handlers, UML-specific objects and application objects are separated in layers.
 
-  * 'UDCore': Es el núcleo de la librería, por ello concentra la mayor parte de la funcionalidad y complejidad. Su función comprende desde el dibujo de líneas y formas, hasta el manejo y la interacción con el usuario. 
+  * 'UDCore': This is the library core, and concentrates most of the functional capabilities, and complexity. It is thought to a wide range of tasks: drawing lines and shapes, handling of user events (interaction), etc.
 
-  * 'UDModules': Se trata de una capa superior a la anterior. Esta capa contiene los objetos de UML 2, implementados sobre los elementos proporcionados por la capa 'UDCore', dotando a estos de la forma requerida por el estándar. 
+  * 'UDModules': The middle layer. This contains the UML2 objects, as required by the Standard, implemented on the 'UDCore' layer. 
+
+The uppest layer should be implemented by the programmer. Here we provide a sample simple UML editor, as a proof-of-concept. This is the nearest layer to the user, and should be implemented on the 'UDModules' layer.
 
 Para descargar la guía de referencia:
 <Enlace a quickreference.pdf>
 
 == Quick overview ==
 
-Supported objects:
+Supported UML objects:
 
   * UDCore
     * Diagram
