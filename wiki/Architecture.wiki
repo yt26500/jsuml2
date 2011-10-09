@@ -11,59 +11,84 @@ Para descargar la guía de referencia:
 
 == Quick overview ==
 
+Supported objects:
+
   * UDCore
     * Diagram
     * Node
     * Relation 
 
   * UDModules
-    * Diagrama de casos de uso
-      * Diagrama de casos de uso
-        * Actor
-        * Caso de uso
-        * Caso de uso extendido
-        * Sistema
-        * Subsistema
-        * Relación de comunicación
-        * Relación de extensión
-        * Relación de inclusión
-        * Relación de generalización 
+    * Use case diagram:
+      * Use case diagram
+      * Actor
+      * Use case
+      * Extended use case
+      * System
+      * Subsystem
+      * Relationships:
+        * Communication
+        * Extend
+        * Include
+        * Generalization 
 
-    * Diagrama de clases
-      * Diagrama de clases
-      * Paquete
-      * Paquete contenedor
-      * Clase
-      * Componente
-      * Interfaz
-      * Relaciones
-        * Relación de agregación
-        * Relación de asociación
-        * Relación de composición
-        * Relación de dependencia
-        * Relación de generalización
-        * Relación de realización
-        * Relación de uso
-        * Relación de combinación
-        * Relación de importación pública de paquete
-        * Relación de importación privada de paquete 
+    * Class diagrams
+      * Class diagram
+      * Package
+      * Package (container)
+      * Class
+      * Component
+      * Interface
+      * Relationships:
+        * Aggregation
+        * Association
+        * Composition
+        * Dependency
+        * Generalization
+        * Realization
+        * Use
+        * Combination
+        * Public package import
+        * Private package import
 
-    * Diagrama de secuencia
-      * Diagrama de secuencia
-      * Línea de vida
-      * Interacción
-      * Mensaje
-      * Mensaje de respuesta
-      * Mensaje de borrado 
+    * Component diagrams
+      * Component diagram
+      * Component
+      * Interface
+      * Port
+      * (Specific) relationships
+        * Use
+        * Realize
 
-    * Diagrama de componentes
-      * Diagrama de componentes
-      * Componente
-      * Interfaz
-      * Puerto
-      * Relaciones especificas
-        * Relación de uso de la interfaz
-        * Relación de realización de la interfaz
+
+    * Message sequence diagrams:
+      * MSC diagram
+      * Lifeline
+      * Interactions:
+        * Call message
+        * Send message
+        * Reply message
+        * Create
+        * Delete / destroy
+      * Blocks:
+         * OPTion
+         * ALTernative
+         * LOOP
+         * BREAK
+
+    * State charts:
+      * State machine diagram
+      * Simple state
+      * Composite state
+      * Initial pseudostate
+      * Final pseudostate
+      * Entry point
+      * Exit point
+      * Junction
+      * Vertical region
+      * Horizontal region
+      * Transition
+
 
     * Módulo de objetos genéricos
       * Nota
