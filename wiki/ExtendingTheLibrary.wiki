@@ -13,50 +13,48 @@ Para llevar a cabo esta tarea serán necesarias las siguientes aplicaciones:
   * [http://developer.yahoo.com/yui/compressor/ YUICompressor]
   * Empaquetado de la librería 
 
-== NOTA importante ==
+== Important note ==
 
-Antes de proceder, recuerde que la librería jsUML2 se distribuye bajo licencia GPL3. Para ir mejorando nuestra aportación, así como para referenciar trabajos que hagan uso de ella, recuerde contactar con el coordinador del proyecto (Raúl Romero, jrromero@uco.es) y enviar su aportación al código de la librería o la referencia donde está siendo utilizada, así como su consentimiento (si lo desea) para que se referencie su proyecto desde estas páginas.
+Before proceeding with the installation and use of this software, notice that the library jsUML2 is distributed under a GPL3 license. We want to improve this library, as well as write the links to those sites that make use of this software. Please, remind to contact to the project coordinator (Raúl Romero, jrromero@uco.es) and provide a link to your project if you want to let us know about your work. If you want to, we can also provide a link here.
 
 == Sprockets ==
 
-Sprockets es la aplicación que se ha elegido para resolver las dependencias entre las clases de Javascript, ya que el lenguaje no tiene un modo nativo de realizar esta tarea, por tanto, esta aplicación una vez instalada es la encargada de analizar todos los ficheros fuente de Javascript y unirlos en uno solo. Reduciendo así el engorro y la ineficiencia de transmitir gran cantidad de ficheros a través de internet.
+Sprockets (see the Installation page) has been chosen to solve dependencies among Javascript objects. Since it is not natively provided by the language, it offers a good way to analyze their dependencies and collect them all into one single file. 
 
-Sprocketize está escrito en el lenguaje de programación Ruby, por tanto será necesario tener instalada una versión actual del lenguaje en su computadora. 
-
-Una vez se tiene el entorno de Ruby correctamente instalado, proceder a la instalación de Sprocketize es tan sencillo como ejecutar la siguiente línea:
-
-{{{
-gem install --remote sprockets
-}}}
-
-Si todo ha salido bien, la instalación habrá finalizado y podrá continuar con los siguientes requisitos de instalación, en caso de encontrar algún error, puede dirigirse a la página web de la aplicación.
+Sprocketize was written in Ruby, so all you need to make use of this tool is to install a recent version of this language in your computer. 
 
 == YUICompressor ==
 
-YUICompressor es una pequeña aplicación cuya función es comprimir código Javascript, produciendo ficheros fuente igualmente válidos y ejecutables en cualquier plataforma, pero con una reducción en tamaño muy apreciable (en torno al 40%, dependiendo del contenido). Dicha aplicación, es un componente de la librería de programación en Javascript de Yahoo, la YUI (_Yahoo User Interface_).
+YUICompressor is a small application that serves to compress Javascript code very significantly. As a result, it generates valid compressed files but reduced in size (around 40% less than the original).
 
-La aplicación se ha incluido dentro del paquete de la librería, como se puede comprobar la existencia del fichero 'yuicompressor.jar', para comodidad de los desarrolladores, sin embargo, puesto que está escrito en Java y para su uso se requiere la máquina virtual de Java.
+Thos application is part of the Javascript programming library provided by Yahoo!, name YUI (_Yahoo User Interface_).
 
-== Empaquetado de la librería ==
 
-Una vez se tienen instaladas las aplicaciones necesarias es importante tener una idea de la distribución de los ficheros dentro del directorio de fuentes. Todos los ficheros necesarios para la librería, así como hojas de estilo e imágenes, se encuentran ubicados dentro del directorio 'src', como se detalla a continuación:
+== jsUML2 packages ==
+
+Once you have installed the preprocessing applications, you need to know how the jsUML2 packages are distributed into source directories. 
+
 
 {{{
     /src
-        /core           % Ficheros del núcleo de la librería.
-        /modules        % Fichero con los diagramas de UML 2.
-            /class      % Diagramas de clases.
-            /component  % Diagramas de componentes.
-            /sequence   % Diagramas de secuencia.
-            /usecase    % Diagramas de casos de uso.
+        /core           % The library core (graphical elements and handlers, user interaction, etc.).
+        /modules        % It containts UML2 elements.
+            /activity   % Activity diagrams
+            /class      % Class diagrams.
+            /component  % Component diagrams.
+            /generic    % General diagram elements (notes, lines, stereotypes, etc.)
+            /profile    % Profile definition diagram and basic features
+            /sequence   % Sequence diagrams.
+            /stateMachine % Statechars
+            /usecase    % Use case diagram.
 }}}
 
-Así se comprende claramente la distribución general de los ficheros, cuando la librería es empaquetada, extrae la información sobre los diagramas del directorio 'modules', por tanto, un desarrollador que desee algunos diagramas concretos dentro de su aplicación, deberá añadir o eliminar los que quiera dentro de ese directorio y empaquetar todo de nuevo.
+When the library is packaged, it extracts information about the diagrams comprised by the 'modules' directory. So, if a developer only wants some specific diagram/s, he should add or remove this/these module directory/ies, and pack it all again.
 
-El proceso de empaquetado y compresión de la librería es simple, se proporciona un fichero denominado 'make.sh' en el paquete de la librería, ejecutando este script se realiza todo el proceso y los ficheros del directorio 'build' son sobreescritos con los nuevos. La ejecución del script se realiza del siguiente modo:
+The packaging and compression process is really simple, and a make file (called 'make.sh') is provided with the library. Notice that by executing this script, all the files comprised in the 'build' directory could be overwriten.
 
 {{{
   ./make.sh
 }}}
 
-Una vez realizado el proceso, los archivos empaquetados de la librería son sobreescritos, la instalación de los nuevos ficheros se realiza de forma idéntica a como se realiza con los ficheros distribuidos por defecto y no requieren de ningún procedimiento adicional. 
+Once the process is finished, the package generated can be installed and used similarly to the full package provided by default. No additional procedure is required.
